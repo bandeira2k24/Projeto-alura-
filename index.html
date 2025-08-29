@@ -1,22 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Acessível</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acessibilidade na Web</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo ao Site Acessível</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Sobre Nós</h2>
-            <p>Este site é um exemplo de acessibilidade na web.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Site Acessível</p>
-    </footer>
+  <header>
+    <h1>Acessibilidade na Web</h1>
+    <nav>
+      <ul>
+        <li><a href="#importancia">Importância</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="importancia">
+      <h2>Por que a acessibilidade é importante?</h2>
+      <p>
+        A acessibilidade digital garante que todas as pessoas, incluindo aquelas com
+        deficiência, consigam navegar e interagir com conteúdos da web.
+      </p>
+    </section>
+
+    <section id="recursos">
+      <h2>Recursos de Acessibilidade</h2>
+      <ul>
+        <li>Leitores de tela</li>
+        <li>Teclas de atalho</li>
+        <li>Alto contraste</li>
+        <li>Texto alternativo em imagens</li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>Entre em contato</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto desenvolvido por <strong>Gustavo Bandeira</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
